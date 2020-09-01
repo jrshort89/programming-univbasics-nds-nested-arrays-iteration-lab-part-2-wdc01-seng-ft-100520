@@ -10,8 +10,10 @@ def find_min_in_nested_arrays(src)
     if min > src[count1][count2]
       min = src[count1][count2]
     end
+    count2 += 1
     end
   arr.push(min)
+  count1 += 1
   end
   arr
 end
